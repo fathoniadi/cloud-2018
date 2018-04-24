@@ -1,0 +1,6 @@
+---
+- hosts: worker #nama host list di production
+  vars: 
+    proxy_env: http://akunvpn:password@proxy.its.ac.id
+  roles: #Declare roles
+    - { role: apache2 }

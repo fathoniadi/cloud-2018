@@ -1,0 +1,7 @@
+- name: install on debian based linux
+  become: yes
+  apt: name={{ item }} state=latest update_cache=true
+  with_items:
+   - apache2
+  notify: restart apache2
+  when: ansible_os_family  == "Debian"

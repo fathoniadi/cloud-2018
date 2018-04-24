@@ -1,0 +1,4 @@
+# production inventory
+
+[worker]
+debian-11	ansible_host=10.151.38.124 	ansible_ssh_user=administrator ansible_become_pass=(password)

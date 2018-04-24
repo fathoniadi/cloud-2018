@@ -1,0 +1,4 @@
+---
+- hosts: worker
+  roles:
+    - { role: apache2 }

@@ -1,0 +1,5 @@
+- name: restart apache2
+  become: yes
+  become_user: root
+  become_method: su
+  action: service name=apache2 state=restarted
